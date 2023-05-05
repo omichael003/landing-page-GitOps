@@ -15,8 +15,8 @@ spec:
         app: mdproject
     spec:
       containers:
-        - name: ecrdemo
-          image: 709579612523.dkr.ecr.us-east-1.amazonaws.com/demoecr:2.0
+        - name: demoecr
+          image: 709579612523.dkr.ecr.us-east-1.amazonaws.com/demoecr:2.5
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
