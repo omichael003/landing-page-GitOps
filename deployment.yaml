@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: ecrdemo
-          image: 709579612523.dkr.ecr.us-east-1.amazonaws.com/ecrmdproject:1.0
+          image: 709579612523.dkr.ecr.us-east-1.amazonaws.com/demoecr:2.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
