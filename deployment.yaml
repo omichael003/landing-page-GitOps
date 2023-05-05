@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mdproject
+  labels:
+    app: mdproject
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mdproject
+  template:
+    metadata:
+      labels:
+        app: mdproject
+    spec:
+      containers:
+        - name: ecrdemo
+          image: 709579612523.dkr.ecr.us-east-1.amazonaws.com/demoecr:1.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
